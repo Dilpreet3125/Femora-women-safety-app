@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Circle Background for the Icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,54m-44,0a44,44 0,1 1,88 0a44,44 0,1 1,-88 0"
+        android:alpha="0.2"/>
+
+    <!-- The Shield -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,26L34,33.5v15c0,13.12 9.15,26.85 20,30c10.85,-3.15 20,-16.88 20,-30V33.5l-20,-7.5zM54,31.45l15,5.45v11.63c0,11.25 -7.68,23.1 -15,26.4c-7.32,-3.3 -15,-15.15 -15,-26.4V36.9l15,-5.45z"/>
+
+    <!-- The Heart (symbolizing care and femininity) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,62.5l-1.45,-1.32C47.4,56.41 43.5,52.88 43.5,48.5c0,-3.58 2.82,-6.4 6.4,-6.4c2.02,0 3.96,0.94 5.2,2.44c1.24,-1.5 3.18,-2.44 5.2,-2.44c3.58,0 6.4,2.82 6.4,6.4c0,4.38 -3.9,7.91 -9.05,12.69L54,62.5z"/>
+
+</vector>

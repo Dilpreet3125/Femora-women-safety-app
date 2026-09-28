@@ -1,0 +1,83 @@
+<resources>
+
+    <string name="app_name">Femaura</string>
+
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="age">Age</string>
+    <string name="eye_icon">Toggle password</string>
+    <string name="login_text">Do not have an account? Sign up</string>
+
+    <string name="signup">Create Account</string>
+    <string name="signup_text">Already have an account? Log in</string>
+
+    <string name="full_name">Enter your full name</string>
+    <string name="phone">Phone Number</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Create a strong password</string>
+    <string name="toggle_password">Toggle password visibility</string>
+
+    <!-- Register Labels -->
+    <string name="full_name_label">Full Name *</string>
+    <string name="phone_label">Phone Number *</string>
+    <string name="email_label">Email Address *</string>
+    <string name="password_label">Password *</string>
+    <string name="confirm_password_label">Confirm Password *</string>
+    <string name="age_label">Age</string>
+
+    <!-- Emergency Contact Strings -->
+    <string name="emergency_contact_setup">Emergency Contact Setup</string>
+    <string name="add_trusted_contact">Add at least one trusted contact</string>
+    <string name="add_emergency_contact">Add Emergency Contact</string>
+    <string name="no_contacts_yet">No contacts yet</string>
+    <string name="sos_setup_desc">SOS requires trusted contacts to function. Add at least one person who can help in emergencies.</string>
+    <string name="emergency_alerts_desc">Add at least one trusted contact who will receive your emergency alerts.</string>
+    <string name="add_contact_to_continue">Add at least 1 contact to continue</string>
+    <string name="info_icon_desc">Information icon</string>
+
+    <!-- Onboarding 2 Strings -->
+    <string name="location_icon">location icon</string>
+    <string name="live_location">Live Location</string>
+    <string name="location_subtitle">Share your real-time location with trusted contacts</string>
+    <string name="next">Next</string>
+
+    <!-- Onboarding 3 Strings -->
+    <string name="shield_icon">Shield Icon</string>
+    <string name="safety_tips">Safety &amp; Privacy</string>
+    <string name="safety_subtitle">Your safety and privacy are our top priority.</string>
+    <string name="get_started">Get Started</string>
+
+    <!-- Dashboard Strings -->
+    <string name="profile_label">Profile</string>
+    <string name="live_location_icon">Live Location Icon</string>
+    <string name="trusted_contacts_icon">Trusted Contacts Icon</string>
+    <string name="safety_insights_icon">Safety Insights Icon</string>
+    <string name="emergency_report_icon">Emergency Report Icon</string>
+
+    <!-- Profile Strings -->
+    <string name="back_desc">Back</string>
+    <string name="profile_pic_desc">Profile Picture</string>
+    <string name="add_img_desc">Add Image</string>
+    <string name="personal_info">Personal Information</string>
+    <string name="notifications">Notifications</string>
+    <string name="privacy_security">Privacy &amp; Security</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="logout">Logout</string>
+    <string name="logout_desc">Logout Icon</string>
+    <string name="play_desc">Play Icon</string>
+    <string name="bell_desc">Bell Icon</string>
+    <string name="lock_desc">Lock Icon</string>
+    <string name="help_desc">Help Icon</string>
+    
+    <!-- Nearby Help Strings -->
+    <string name="place_icon_desc">Place Icon</string>
+    <string name="call">Call</string>
+    <string name="navigate">Navigate</string>
+    <string name="placeholder_place">Central Police Station</string>
+    <string name="placeholder_address">Connaught Place</string>
+    <string name="placeholder_distance">1.2 km</string>
+    <string name="placeholder_phone">011-23456789</string>
+
+</resources>

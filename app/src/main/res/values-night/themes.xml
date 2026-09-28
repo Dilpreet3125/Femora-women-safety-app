@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Updated to MaterialComponents to support modern UI elements and prevent crashes -->
+    <style name="Theme.Femora" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#D8576B</item>
+        <item name="colorPrimaryVariant">#C62839</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#6C5CE7</item>
+        <item name="colorSecondaryVariant">#5A4AD1</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

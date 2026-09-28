@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_light">#F4F3F7</color>
+    <color name="purple_main">#6C3FC5</color>
+    <color name="text_dark">#2D2A4A</color>
+    <color name="text_light">#8A86B8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    
+    <!-- Color State List for Bottom Navigation -->
+    <color name="nav_item_selected">#FF3D7F</color>
+    <color name="nav_item_unselected">#8E94B2</color>
+
+    <color name="profile_green">#4CAF50</color>
+</resources>

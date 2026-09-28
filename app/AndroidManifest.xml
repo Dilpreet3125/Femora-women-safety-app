@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.femora">
+
+    <!-- Fixes "Permission exists without corresponding hardware" errors -->
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+
+    <!-- ─── Network ─────────────────────────────────────────────────────────── -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- ─── SMS (Suppressed warning as this is a core function for the SOS app) ── -->
+    <uses-permission
+        android:name="android.permission.SEND_SMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+
+    <!-- ─── Contacts & Phone ─────────────────────────────────────────────────── -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <!-- ─── Camera ───────────────────────────────────────────────────────────── -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!-- ─── Location ─────────────────────────────────────────────────────────── -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!-- Suppressed warning for background location justification -->
+    <uses-permission
+        android:name="android.permission.ACCESS_BACKGROUND_LOCATION"
+        tools:ignore="CoarseFineLocation" />
+
+    <!-- ─── Foreground Service (Live Location) ───────────────────────────────── -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"/>
+
+    <!-- ─── Boot (restart services after reboot) ─────────────────────────────── -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <!-- ─── Storage / Media (Profile Image) ──────────────────────────────────── -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+
+    <!-- ─── Vibration (SOS alert feedback) ──────────────────────────────────── -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <!-- ─── Voice SOS (Microphone) ──────────────────────────────────────────── -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Femora"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD_149CMgOzUsXPVcgDaHIT9ixuFnP9Il0"/>
+
+        <!-- ─── Splash (Launcher Entry Point) ──────────────────────────────── -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Femora">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- ─── Main Dashboard ──────────────────────────────────────────────── -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- ─── Onboarding ──────────────────────────────────────────────────── -->
+        <activity android:name=".OnboardingActivity1" android:exported="false"/>
+        <activity android:name=".OnboardingActivity2" android:exported="false"/>
+        <activity android:name=".OnboardingActivity3" android:exported="false"/>
+
+        <!-- ─── Auth ─────────────────────────────────────────────────────────── -->
+        <activity android:name=".RegisterActivity" android:exported="false"/>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- ─── Profile ──────────────────────────────────────────────────────── -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- ─── Emergency Contacts ───────────────────────────────────────────── -->
+        <activity
+            android:name=".EmergencyContactActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- ─── Location & Map ───────────────────────────────────────────────── -->
+        <activity android:name=".LiveLocationActivity" android:exported="false"/>
+        <activity android:name=".MapActivity" android:exported="false"/>
+        <activity android:name=".NearbyHelpActivity" android:exported="false"/>
+
+        <!-- ─── Safety Tips ──────────────────────────────────────────────────── -->
+        <activity android:name=".SafetyTipsActivity" android:exported="false"/>
+
+        <!-- ─── Services ─────────────────────────────────────────────────────── -->
+        <!-- Fixed: Android 14+ requires Foreground Service types -->
+        <service
+            android:name=".SOSService"
+            android:foregroundServiceType="location"
+            android:exported="false" />
+
+        <service
+            android:name=".SOSQuickSettingsService"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

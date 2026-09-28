@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "704911599115",
+    "firebase_url": "https://femora-f09c5-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "femora-f09c5",
+    "storage_bucket": "femora-f09c5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704911599115:android:6239a47e49e88f074e490e",
+        "android_client_info": {
+          "package_name": "com.example.femora"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByBbSMYhzRs6RjtGFdtzV-6Lqf_Ro6aS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

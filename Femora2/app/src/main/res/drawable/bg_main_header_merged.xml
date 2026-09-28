@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Step 1: The solid background color (gradient) -->
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#FF5F8F"
+                android:endColor="#FF3D7F"
+                android:angle="270" />
+        </shape>
+    </item>
+
+    <!-- Step 2: The image moved down and aligned to the bottom -->
+    <item android:top="110dp" android:bottom="-40dp">
+        <bitmap
+            android:src="@drawable/create_acc"
+            android:gravity="bottom|center_horizontal"
+            android:alpha="0.8" />
+    </item>
+</layer-list>

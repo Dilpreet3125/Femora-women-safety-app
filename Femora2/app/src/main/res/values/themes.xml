@@ -1,0 +1,62 @@
+<resources>
+
+    <style name="Theme.Femora" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+    
+    <style name="ProfileMenuItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingHorizontal">20dp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="ProfileMenuIconStyle">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:tint">#6C5CE7</item>
+    </style>
+
+    <style name="ProfileMenuTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:textColor">#2D2A4A</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ProfileMenuArrowStyle">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:src">@android:drawable/ic_media_play</item>
+        <item name="android:tint">#BDBDBD</item>
+    </style>
+
+    <style name="DividerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#F0F0F0</item>
+    </style>
+
+    <!-- SAFETY TIPS STYLES -->
+    <style name="SafetyTipItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#444444</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <style name="SituationSubItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:layout_marginStart">4dp</item>
+    </style>
+
+</resources>

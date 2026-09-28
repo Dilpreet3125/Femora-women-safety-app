@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "704911599115",
+    "firebase_url": "https://femora-f09c5-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "femora-f09c5",
+    "storage_bucket": "femora-f09c5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704911599115:android:6239a47e49e88f074e490e",
+        "android_client_info": {
+          "package_name": "com.example.femora"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704911599115-5noav7lu1qviknnpk46ra0s9il3a4mfb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.femora",
+            "certificate_hash": "8F:E8:E4:00:0A:40:46:C9:31:67:E8:20:6F:24:82:99:BC:55:DE:E1"
+          }
+        },
+        {
+          "client_id": "704911599115-c2pg5oot9n3e7l6qob4p825lb4tftt6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByBbSMYhzRs6RjtGFdtzV-6Lqf_Ro6aS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704911599115-c2pg5oot9n3e7l6qob4p825lb4tftt6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
